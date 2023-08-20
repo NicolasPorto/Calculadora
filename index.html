@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="icon" type="imagem/png" href="/images/lua.png" />
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="titulo">
+            <label>CALCULADORA</label>
+            <label class="trocarTema" onclick="TrocarTema()">🌒</label>
+        </div>
+
+        <div class="container">
+            <div class="baseCalculadoraBlack">
+
+                <div>
+                    <input class="modoBlack" type="text" id="calculo" style="width: 240px;" readonly>
+                </div>
+
+                <div class="teclas">
+                    <div class="coluna4">
+                        <input class="modoBlack" type="button" value="C" onclick="LimparTudo()">
+                        <input class="modoBlack" type="button" value="&#8592" style="width: 118px;" onclick="LimparDigito()">
+                        <input class="modoBlackOrange" type="button" value="÷" onclick="DigitarOperacao('/')">
+                    </div>
+
+                    <div>
+                        <input class="modoBlack" type="button" value="7" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="8" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="9" onclick="DigitarNumero(value)">
+                        <input class="modoBlackOrange" type="button" value="x" onclick="DigitarOperacao(value)">
+                    </div>
+                    
+                    <div>
+                        <input class="modoBlack" type="button" value="4" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="5" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="6" onclick="DigitarNumero(value)">
+                        <input class="modoBlackOrange" type="button" value="-" onclick="DigitarOperacao(value)">
+                    </div>
+                    
+                    <div>
+                        <input class="modoBlack" type="button" value="1" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="2" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="3" onclick="DigitarNumero(value)">
+                        <input class="modoBlackOrange" type="button" value="+" onclick="DigitarOperacao(value)">
+                    </div>
+                    
+                    <div>
+                        <input class="modoBlack" type="button" value="0" onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="," onclick="DigitarNumero(value)">
+                        <input class="modoBlack" type="button" value="=" style="width: 117px;" onclick="Resultado()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <label>by Nicolas Porto.</label>
+        </div>
+    </body>
+</html>
